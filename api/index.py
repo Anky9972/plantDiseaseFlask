@@ -8,8 +8,7 @@ from flask_cors import CORS
 import logging
 
 app = Flask(__name__)
-# CORS(app)
-CORS(app, resources={r"/predict": {"origins": "https://plantdisease-six.vercel.app"}})
+CORS(app)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
