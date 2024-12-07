@@ -14,9 +14,7 @@ CORS(app)
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Dynamically find model path
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(os.path.dirname(BASE_DIR), 'model', 'api/model/crop_disease_model.h5')
+MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'crop_disease_model.h5')
 
 # Load model with error handling
 try:
